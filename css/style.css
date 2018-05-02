@@ -1,0 +1,268 @@
+/*====================================
+ Шапка
+====================================*/
+.main__header{
+  background: #ffffff;
+  min-height: 50px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,.1);
+}
+.header__top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+.header__menu-list{
+  display: flex;
+  list-style: none;
+}
+.menu-link{
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  padding: 20px;
+}
+.menu-link:hover,
+.menu-link:active,
+.menu-link:focus{
+  background: #ff505f;
+  color: #fff;
+  padding: 19px 20px;
+  outline: none;
+  transition: 0.2s;
+}
+/*====================================
+ hamburger-menu
+====================================*/
+.hamburger-menu {
+  width: 30px;
+  height: 30px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 330ms ease-out;
+}
+.line-menu.start {
+  transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transform-origin: right;
+}
+.line-menu.half {
+  width: 50%;
+}
+.line-menu {
+  background-color: #000000;
+  border-radius: 5px;
+  width: 100%;
+  height: 6px;
+}
+.line-menu.end {
+  align-self: flex-end;
+  transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transform-origin: left;
+}
+
+.hamburger-menu.open {
+  transform: rotate(-45deg);
+}
+.open .line-menu.start {
+  transform: rotate(-90deg) translateX(3px);
+}
+.open .line-menu.end {
+  transform: rotate(-90deg) translateX(-3px);
+}
+/*====================================
+ Контент
+====================================*/
+.contents__page{
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+.content__news-box{
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  background: #ffffff;
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,.1);
+  min-height: 400px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+.article__link{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.content__news-img{
+  background: url(../img/content__news/news-1.jpg);
+  background-size: cover;
+  height: 400px;
+  background-position: 50% 50%;
+}
+.content__news-img-two{
+  background: url(../img/content__news/news-2.jpg);
+  background-size: cover;
+  height: 400px;
+  background-position: 50% 50%;
+}
+.content__news-img-three{
+  background: url(../img/content__news/news-3.jpg);
+  background-size: cover;
+  height: 400px;
+  background-position: 50% 50%;
+}
+.content__news-title h3{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  margin: 0;
+  color: #ffffff;
+  font-size: 25px;
+  line-height: 25px;
+}
+.content__news-desc{
+  padding: 10px;
+}
+.content__news-desc p{
+  margin: 0;
+  line-height: 23px;
+  font-size: 14px;
+  color: #000000;
+  font-weight: 400;
+}
+.article__footer-short{
+  display: flex;
+  align-content: center;
+  padding: 10px;
+  justify-content: space-between;
+}
+.commment__link{
+  font-size: 14px;
+  color: #000000;
+  padding-left: 25px;
+  position: relative;
+}
+.commment__link::before{
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url(../img/chat.svg);
+  top: -4px;
+  left: 0;
+}
+.auftor__news{
+  font-size: 14px;
+  color: #09484A;
+  margin:0 10px;
+  padding-left: 23px;
+  position: relative;
+}
+.auftor__news::before{
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url(../img/user.svg);
+  top: -2px;
+  left: 0;
+}
+.article__data{
+  font-size: 13px;
+  font-weight: 400;
+  color: #818181;
+}
+.advertising{
+  margin-bottom: 40px;
+}
+.advertising__img{
+  max-width: 700px;
+}
+/*====================================
+ Сайтбар
+====================================*/
+.actual__tags{
+  background: #ffffff;
+  width: 250px;
+  min-height: 250px;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,.1);
+}
+.actual__tags h3{
+  margin: 0;
+  padding-bottom: 20px;
+  color: #000000;
+}
+.tags__games{
+  width: 50%;
+  border-right:1px solid #333;
+}
+.tags__games h4{
+  margin: 0;
+  padding-bottom: 10px;
+}
+.tags__movie{
+  width: 50%;
+  border-left:1px solid #333;
+}
+.tags__movie h4{
+  margin: 0;
+  padding-bottom: 10px;
+}
+.tags__block{
+  display: flex;
+  justify-content: space-around;
+}
+.tags__games-list,
+.tags__movie-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.tags-game,
+.tags-movie{
+  font-size: 13px;
+  color: #09484a;
+  margin: 3px 10px;
+}
+.news__discussed-one{
+  position: relative;
+}
+.news__discussed{
+  background: #ffffff;
+  width: 250px;
+  min-height: 400px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,.1);
+}
+.news__discussed .news__discussed-name{
+  margin: 0;
+  padding: 15px 10px;
+  font-size: 14px;
+  color: #000000;
+}
+.news__discussed-img{
+  background:url(../img/content__news/news-1.jpg);
+  background-size: cover;
+  height: 400px;
+  background-position: 50% 50%;
+}
+.news__discussed-title{
+  margin: 0;
+  position: absolute;
+  top: 0;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 15px 10px;
+  font-weight: 400;
+  line-height: 25px;
+}
