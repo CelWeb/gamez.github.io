@@ -33,6 +33,76 @@
   transition: 0.2s;
 }
 /*====================================
+ Поиск
+====================================*/
+.search-ico::before{
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url(../img/search.svg);
+  left: -15px;
+  top: -10px;
+}
+.search-wrapper {
+  position: relative;
+  
+  border-radius: 20px;
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 250ms ease;
+}
+.search-wrapper.focused {
+  width: 200px;
+}
+.search-wrapper.focused input {
+  padding: 0 40px 0 13px;
+  width: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.search-wrapper input {
+  background: transparent;
+  border: 0;
+  color: #000000;
+  outline: none;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  height: 40px;
+  width: 0;
+  overflow: hidden;
+  font-weight: 100;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  transition: 275ms ease;
+}
+.search-wrapper input::-webkit-input-placeholder {
+  color: #cccccc;
+}
+.search-wrapper input:-ms-input-placeholder {
+  color: #cccccc;
+}
+.search-wrapper input::-ms-input-placeholder {
+  color: #cccccc;
+}
+.search-wrapper input::placeholder {
+  color: #cccccc;
+}
+.search-wrapper i {
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  top: 50%;
+  right: 13px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+/*====================================
  hamburger-menu
 ====================================*/
 .hamburger-menu {
@@ -72,6 +142,7 @@
 .open .line-menu.end {
   transform: rotate(-90deg) translateX(-3px);
 }
+
 /*====================================
  Контент
 ====================================*/
@@ -266,3 +337,8 @@
   font-weight: 400;
   line-height: 25px;
 }
+
+
+
+
+
