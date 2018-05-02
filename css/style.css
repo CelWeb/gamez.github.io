@@ -260,7 +260,7 @@
 ====================================*/
 .actual__tags{
   background: #ffffff;
-  width: 250px;
+  width: 300px;
   min-height: 250px;
   text-align: center;
   padding: 15px;
@@ -310,8 +310,8 @@
 }
 .news__discussed{
   background: #ffffff;
-  width: 250px;
-  min-height: 400px;
+  width: 300px;
+  min-height: 500px;
   margin-bottom: 20px;
   box-shadow: 0 2px 2px -1px rgba(0,0,0,.1);
 }
@@ -324,7 +324,7 @@
 .news__discussed-img{
   background:url(../img/content__news/news-1.jpg);
   background-size: cover;
-  height: 400px;
+  min-height: 500px;
   background-position: 50% 50%;
 }
 .news__discussed-title{
