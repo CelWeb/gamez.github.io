@@ -12,6 +12,7 @@
 .header__top{
     padding: 10px;
     margin: 0 10px;
+    justify-content: space-between;
 }
 .header__menu{
     display: none;
