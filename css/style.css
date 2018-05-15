@@ -26,9 +26,9 @@
 .menu-link:hover,
 .menu-link:active,
 .menu-link:focus{
-  background: #eee;
+  border-bottom: 3px solid #005ab6;
   color: #000000;
-  padding: 19px 20px;
+  padding: 16px 20px;
   outline: none;
   transition: 0.2s;
 }
@@ -41,7 +41,7 @@
   width: 20px;
   height: 20px;
   background: url(../img/search.svg);
-  left: -15px;
+  left: -20px;
   top: -10px;
 }
 .search-wrapper {
@@ -235,7 +235,7 @@
 }
 .auftor__news{
   font-size: 14px;
-  color: #09484A;
+  color: #005ab6;
   margin:0 10px;
   padding-left: 23px;
   position: relative;
@@ -307,7 +307,7 @@
 .tags-game,
 .tags-movie{
   font-size: 13px;
-  color: #09484a;
+  color: #005ab6;
   margin: 3px 10px;
 }
 .news__discussed-one{
