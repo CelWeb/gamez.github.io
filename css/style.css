@@ -26,8 +26,8 @@
 .menu-link:hover,
 .menu-link:active,
 .menu-link:focus{
-  background: #ff505f;
-  color: #fff;
+  background: #eee;
+  color: #000000;
   padding: 19px 20px;
   outline: none;
   transition: 0.2s;
@@ -65,11 +65,12 @@
           transform: scale(1);
 }
 .search-wrapper input {
-  background: transparent;
+  background: #eee;
   border: 0;
   color: #000000;
   outline: none;
-  border: 1px solid #000000;
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,.1);
+  border:1px solid #cccccc;
   border-radius: 20px;
   height: 40px;
   width: 0;
